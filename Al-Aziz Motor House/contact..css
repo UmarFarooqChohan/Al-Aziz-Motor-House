@@ -1,0 +1,121 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #b8a385, #8d7962);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contact Container */
+.contact-container {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+/* Business Card */
+.business-card-img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    margin: 20px auto;
+    display: block;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+}
+
+/* Contact Wrapper */
+.contact-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Contact Form */
+.contact-form {
+    flex: 1;
+    padding: 20px;
+    min-width: 300px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background: #d4af37; /* Gold */
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.contact-form button:hover {
+    background: #c49a2f;
+}
+
+/* Contact Details */
+.contact-details {
+    flex: 1;
+    padding: 20px;
+    min-width: 300px;
+    text-align: left;
+}
+
+.contact-details p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.social-icons a {
+    color: #ffd700;
+    text-decoration: none;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.social-icons a:hover {
+    text-decoration: underline;
+}
+
+/* Map Container */
+.map-container {
+    margin-top: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+    border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-form, .contact-details {
+        width: 90%;
+    }
+}
